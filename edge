@@ -1,0 +1,7 @@
+%カラー画像をグレースケールに変換しcanny法を利用してエッジを抽出する%
+
+A = imread('D:\MATLAB\Lenna[1].png');
+gim = rgb2gray(A);
+imshow(gim);
+BW1 = edge(gim,'Canny');
+imshow(BW1);
